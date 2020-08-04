@@ -19,8 +19,7 @@ import {Colors} from 'react-native/Libraries/NewAppScreen';
 
 import Home from './components/Home/Home';
 import {Provider} from 'mobx-react';
-import Store from './components/Home/Store';
-const store = (window.store = new Store());
+import store from './components/Home/Store';
 
 const App = () => (
   <Provider store={store}>

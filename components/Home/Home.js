@@ -39,14 +39,6 @@ class Home extends React.Component {
     let dateFormate = (argData) => {
       let showToday = '';
       var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-      console.log(
-        argData +
-          ' ' +
-          new Date(argData.replace(' ', 'T')).getDate() +
-          ' ' +
-          days[new Date(argData.replace(' ', 'T')).getDay()],
-      );
-
       const monthNames = [
         'Jan',
         'Feb',
@@ -92,7 +84,7 @@ class Home extends React.Component {
         </View>
         <View style={styles.formSection}>
           <TextInput
-            placeholder="Type city name or country name"
+            placeholder="City or Country name"
             style={styles.searchField}
             onChangeText={this.props.store.onChangeText}
           />

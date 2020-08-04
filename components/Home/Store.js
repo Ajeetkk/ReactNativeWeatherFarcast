@@ -10,4 +10,4 @@ class Store {
     this.queryData = val;
   };
 }
-export default Store;
+export default new Store();
